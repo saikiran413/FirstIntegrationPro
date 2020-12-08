@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+    font-size: 24px;
+    padding: 24px;
+}
+
+.select {
+    margin: 24px;
+}
+.search-results {
+    height: 600px;
+    overflow: scroll;
+  }

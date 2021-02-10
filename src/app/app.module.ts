@@ -8,13 +8,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { HighlightDirective } from './myHighlight.directive';
 // import { InfiniteScrollModule } from 'ngx-infinite-scroll/src/ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DirectiveComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HttpClientModule,
     // InfiniteScrollModule
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
